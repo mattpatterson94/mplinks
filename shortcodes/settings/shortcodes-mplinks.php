@@ -1,5 +1,4 @@
 <?php
-
 function mplinks_format_link($link) {
   $display = "<div>";
   $display .= "<a href='". $link['url'] ."'";
@@ -16,7 +15,7 @@ function mplinks_format_link($link) {
   return $display;
 }
 
-//[mplinks header="true|false"]
+//[mplinks header="true|false" class='mplinks__links']
 function shortcode_mplinks($atts) {
   $args = shortcode_atts(
     array('header' => 'false', 'class' => 'mplinks__links'),
@@ -30,7 +29,7 @@ function shortcode_mplinks($atts) {
   }
 
   $links = get_field('mplinks_links', 'option');
-
+  var_dump( $links );
   foreach($links as $link) {
     $display .= mplinks_format_link($link);
   }

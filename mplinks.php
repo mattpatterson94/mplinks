@@ -27,6 +27,8 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 **************************************************************************/
+require_once(plugin_dir_path( __FILE__ ) . 'acf.php');
+require_once(plugin_dir_path( __FILE__ ) . 'acf/pro/acf-pro.php');
 require_once(plugin_dir_path( __FILE__ ) . 'options/options.php');
 require_once(plugin_dir_path( __FILE__ ) . 'shortcodes/shortcodes.php');
 

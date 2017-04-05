@@ -96,4 +96,4 @@ function register_mplinks_general_options() {
   }
 }
 
-add_action('admin_menu', 'register_mplinks_general_options', 10);
+add_action('acf/include_fields', 'register_mplinks_general_options', 10);
