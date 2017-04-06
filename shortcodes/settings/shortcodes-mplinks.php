@@ -29,7 +29,6 @@ function shortcode_mplinks($atts) {
   }
 
   $links = get_field('mplinks_links', 'option');
-  var_dump( $links );
   foreach($links as $link) {
     $display .= mplinks_format_link($link);
   }
