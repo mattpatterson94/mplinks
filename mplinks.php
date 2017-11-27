@@ -52,7 +52,7 @@ function MPLinks() {
 function register_mplinks_custom_css() {
   wp_enqueue_style(
     'mplinks-custom-css',
-    plugin_dir_path( __FILE__ ) . 'style.css'
+    plugin_dir_url( __FILE__ ) . 'style.css'
   );
 
   $custom_css = get_field('mplinks_custom_css', 'option');
